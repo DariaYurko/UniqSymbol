@@ -1,0 +1,102 @@
+/* Обнуление */
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+li {
+   list-style: none;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+img {
+   vertical-align: top;
+}
+
+/* ==================================================== */
+
+body {
+   background-color: rgba(247, 190, 254, 0.486);
+   font-size: 21px;
+   line-height: 1.5;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.wrapper {
+   margin: 0 auto;
+   max-width: 1000px;
+   overflow: hidden;
+}
+
+.main {
+   max-width: 100%;
+}
+
+.form__text {
+   padding: 20px;
+   width: 500px;
+   height: 200px;
+   font-size: 20px;
+}
+
+.title {
+   font-size: 25px;
+   font-weight: bold;  
+   margin-top: 20px; 
+}
+.list {
+   padding: 20px;
+}
+.list__item {
+   list-style: disc;
+}
+.form {
+   display: flex;
+   justify-content: center;
+   margin: 30px 0;
+}
+.form__text {
+   border-radius: 15px;
+   box-shadow: 0px 0px 2px #000;
+}
+.text {}
+.text__inner {
+   background-color: rgb(127, 227, 255);
+   padding: 5px 15px;
+   border-radius: 5px;
+}
+.btn-block {
+   display: flex;
+   justify-content: center;
+   padding: 20px 0;
+}
+.btn {
+   background-color: aquamarine;
+   padding: 10px 25px;
+   cursor: pointer;
+   font-size: 20px;
+   border-radius: 5px;
+   line-height: 1.5;
+   box-shadow: 0px 0px 2px #000;
+
+}
+
+.btn:hover {
+   background-color: rgba(110, 225, 187, 0.884);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Unique symbol</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header></header>
+      <main class="main">
+         <h1 class="title">Вам потрібно розробити алгоритм програми, яка повинна виконувати наступне:</h1>
+         <ul class="list">
+            <li class="list__item">програма приймає на вхід довільний текст і знаходить в кожному слові цього тексту
+               найперший символ, який більше НЕ повторюється в аналізуємому слові</li>
+            <li class="list__item">далі із отриманого набору символів програма повинна вибрати перший унікальний (тобто
+               той, який більше не зустручається в наборі) і повернути його.</li>
+         </ul>
+         <h2 class="title">Результат роботи програми:</h2>
+         <form class="form" action="#" method="get" enctype="multipart/form-data">
+            <textarea class="form__text" name="text" id="text" placeholder="Ведіть довільний текст в це поле."
+               oninput="runProgram()"></textarea>
+         </form>
+         <p class="text" id="strOfuniq">Маємо рядок унікальних символів, отриманих з кожного слова у тексті - <span
+               class="text__inner"></span></p>
+         <p class="text" id="firstUniqSymb">Перший унікальний символ у рядку - <span class="text__inner"></span></p>
+         <div class="btn-block">
+            <button class="btn" id="button" type="reset" onclick="cleanTextArea()">Очистити</button>
+         </div>
+      </main>
+      <footer></footer>
+   </div>
+   <script src="js/uniq.js"></script>
+</body>
+
+</html>
