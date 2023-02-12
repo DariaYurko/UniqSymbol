@@ -41,14 +41,16 @@ function runProgram() {
          continue;
       } else {   
          uniqSymbol = getUniqueSymbol(arrayOfWords[i]);
-         arrayOfUniqChar.push(uniqSymbol);
+         if (uniqSymbol !== '') {
+            arrayOfUniqChar.push(uniqSymbol);
+         }
       } 
    }
 
    strOfUniqChar = arrayOfUniqChar.join('');
    firstUniqChar = getUniqueSymbol(strOfUniqChar);
 
-   if (strOfUniqChar.length <= 0) {
+   if (strOfUniqChar.length == 0) {
       strOfUniqChar = 'отриманий набір символів не містить унікальних'
       firstUniqChar = 'відсутній'
    } 
