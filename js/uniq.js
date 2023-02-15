@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 function getParseText(text) {
-   let textWithoutSigns = text.replace(/[^а-яА-Яa-zA-Z]/gm, ' ');
+   let textWithoutSigns = text.replace(/\'/gm, '').replace(/[^а-яА-Яa-zA-Z]/gm, ' ');
    let arrayOfWords = textWithoutSigns.split(' ');
    return arrayOfWords;
 }
@@ -22,8 +22,8 @@ function getUniqueSymbol(word) {
 ////////////////////////////// очистка текстового поля при нажатии на кнопку/////////////////
 function cleanTextArea() {                                                       
    document.getElementById('text').value = '';
-   document.getElementById('strOfuniq').lastChild.innerText = ' ';
-   document.getElementById('firstUniqSymb').lastChild.innerText = ' ';
+   document.getElementById('strOfuniq').lastChild.innerText = '';
+   document.getElementById('firstUniqSymb').lastChild.innerText = '';
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
